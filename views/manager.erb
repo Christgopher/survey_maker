@@ -1,0 +1,21 @@
+<h1>Survey Manager</h1>
+<hr>
+
+<h3>Surveys:</h3>
+
+<ul>
+  <% @surveys.each() do |survey| %>
+    <li><a href = "/survey/<%= survey.id() %>"><%= survey.title() %></a></li>
+  <% end %>
+</ul>
+<br>
+
+<form action="/surveys" method="post">
+  <label for="title">Title</label>
+  <input id="title" name="title" type="text">
+
+  <button type="submit">Add Survey</button>
+</form>
+<br>
+
+<a href="/">Home</a>

@@ -1,0 +1,22 @@
+<h1>Howdy</h1>
+
+<h3>Pick A Survey!</h3>
+
+<ul>
+  <% @surveys.each() do |survey| %>
+    <li><a href = "/user_survey/<%= survey.id() %>"><%= survey.title() %></a></li>
+  <% end %>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="/manager">Management</a>
