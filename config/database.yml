@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: survey_maker_development
+  template: template0
+
+test:
+  adapter: postgresql
+  database: survey_maker_test
+  template: template0
