@@ -1,4 +1,4 @@
 require "spec_helper"
 
-describe(Survey) do
+describe(Question) do
 end
